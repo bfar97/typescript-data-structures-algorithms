@@ -57,6 +57,7 @@ class Heap {
         // returns the max element in the heap and deletes it from the heap
         let max = this.heap[0]
         this.delete(0)
+        this.heap = this.buildHeap(this.heap)
         return max
     }
 
